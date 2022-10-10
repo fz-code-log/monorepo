@@ -11,5 +11,13 @@ export default defineConfig({
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
     }
-  }
+  },
+  server: {
+    proxy: {
+      '/test':{
+        target: 'https://apis.juhe.cn',
+        changeOrigin: true,
+        rewrite: (path) => ''
+      },
+    }}
 })

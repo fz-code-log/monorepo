@@ -13,6 +13,7 @@ importers:
 
   projects/vite-project:
     specifiers:
+      '@libs/core': workspace:^1.0.1
       '@types/node': ^16.11.56
       '@vitejs/plugin-vue': ^3.0.3
       '@vitejs/plugin-vue-jsx': ^2.0.1
@@ -25,6 +26,7 @@ importers:
       vue-router: ^4.1.5
       vue-tsc: ^0.40.7
     dependencies:
+      '@libs/core': link:../../libs/core
       pinia: 2.0.22_rg374xhldfcyvjtaj3qktyfz5y
       vue: 3.2.40
       vue-router: 4.1.5_vue@3.2.40

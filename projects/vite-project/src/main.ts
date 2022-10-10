@@ -6,8 +6,8 @@ import router from './router'
 
 import './assets/main.css'
 
-import {} from "@libs/core"
-
+import {testReq} from "@libs/core"
+testReq()
 const app = createApp(App)
 
 app.use(createPinia())
